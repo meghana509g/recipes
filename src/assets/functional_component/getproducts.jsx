@@ -5,7 +5,7 @@ function Getproducts(){
     const [products,setproducts]=useState([])
     //get recipes function
     const get_recipes=async ()=>{
-        let response=await fetch('http://127.0.0.1:8000/recipes/')
+        let response=await fetch('https://food-restraunt-backend-server.onrender.com/recipes/')
         response    =await response.json()
         setproducts(response.recipes)
     }
